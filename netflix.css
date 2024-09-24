@@ -1,0 +1,118 @@
+/* Style de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #141414;
+    font-family: Arial, sans-serif;
+    color: white;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: #141414;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head{
+    display: flex;  
+    width: 95vw;
+    height: fit-content;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    color: #E50914;
+    font-size: 24px;
+    font-weight: bold;
+    top: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    position: relative;
+    right: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #E50914;
+}
+
+.loading{
+    font-size: 20px;
+}
+.content {
+    padding: 40px;
+}
+.accueil{
+    display: flex;
+    margin-top: 50px;
+}
+.accueil div{
+    height: fit-content;
+}
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.image{
+    left: 20px;
+    width: 250px; 
+    height: auto;
+}
+.equipe{
+    width: 700px; 
+    height: auto;
+}
+.paragraphe{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+}
+
+.movie-tile {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.movie-tile img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.movie-tile:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+li:hover{
+    cursor: pointer;
+}
